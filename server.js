@@ -4,8 +4,10 @@ const path = require('path');
 
 const app = express();
 
+console.log('Jai Ho Mata Di:'+ __dirname);
+
 // Serve only the static files form the dist directory
-app.use(express.static(__dirname + '/dist/sajuui'));
+app.use(express.static(__dirname + 'dist/sajuui'));
 
 app.get('/*', function(req,res) {
     
